@@ -5,7 +5,7 @@ class Book {
     var author = ""
     var description = ""
     var website = ""
-    var price = 0.0
+    var price = ""
     var category = ""
     var image = ""
 }
