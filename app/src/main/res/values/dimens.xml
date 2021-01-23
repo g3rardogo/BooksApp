@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginCardView">10dp</dimen>
+    <dimen name="sizeTitle">25sp</dimen>
+    <dimen name="sizeSubtitle">20sp</dimen>
+    <dimen name="heightSpace">20dp</dimen>
+    <dimen name="heightView">0.1dp</dimen>
+    <dimen name="cornerRadiusCardView">10dp</dimen>
+    <dimen name="cornerRadiusBuyCardView">25dp</dimen>
+    <dimen name="heightBuyCardView">65dp</dimen>
+</resources>

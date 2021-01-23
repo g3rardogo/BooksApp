@@ -9,7 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     
     //Mine
-    <color name="colorPrimary">#3E3C3D</color>
+    <color name="colorPrimary">#2B2F3E</color>
     <color name="colorPrimaryDark">#262639</color>
     <color name="colorAccent">#E82C53</color>
+    <color name="colorSubtitle">#8B8B8B</color>
+    <color name="colorView">#AFABAB</color>
+    <color name="colorCategory">#33E2AB</color>
 </resources>
