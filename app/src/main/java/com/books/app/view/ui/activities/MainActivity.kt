@@ -1,12 +1,8 @@
-package com.books.app
+package com.books.app.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.books.app.model.Book
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.gson.JsonObject
-import org.json.JSONArray
-import org.json.JSONObject
+import com.books.app.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

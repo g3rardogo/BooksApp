@@ -7,4 +7,6 @@
     <string name="tab_3">Inspiration</string>
     <string name="tab_4">Free Column</string>
     <string name="tab_5">Inspiration</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

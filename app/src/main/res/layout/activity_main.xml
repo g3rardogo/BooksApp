@@ -3,9 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:layout_height="match_parent"                             >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -69,5 +67,12 @@
                     />
             </com.google.android.material.tabs.TabLayout>
         </androidx.cardview.widget.CardView>
+        <fragment
+            android:id="@+id/fragContent"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navGraph="@navigation/nav_graph">
+        </fragment>
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

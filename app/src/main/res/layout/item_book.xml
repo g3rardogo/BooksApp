@@ -16,6 +16,7 @@
             app:cardCornerRadius="@dimen/cornerRadiusCardView"
             android:layout_marginTop="10dp">
             <ImageView
+                android:id="@+id/ivBookImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/book_example"
@@ -31,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
+                    android:id="@+id/tvBookName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Nombre libro"
@@ -39,6 +41,7 @@
                     android:layout_marginLeft="@dimen/marginCardView"
                     android:textSize="20sp"/>
                 <TextView
+                    android:id="@+id/tvBookAutor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Autor libro"
@@ -46,6 +49,7 @@
                     android:layout_marginLeft="@dimen/marginCardView"
                     android:textSize="15sp"/>
                 <TextView
+                    android:id="@+id/tvBookPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="$00.00"
@@ -55,6 +59,7 @@
                     android:layout_marginBottom="5dp"
                     android:textSize="15sp"/>
                 <TextView
+                    android:id="@+id/tvBookCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FREE"

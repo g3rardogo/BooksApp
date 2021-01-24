@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHomeFragment"
+        android:title="Destacados">
+    </item>
+    <item
+        android:id="@+id/navScheduleFragment"
+        android:title="Cronograma">
+    </item>
+    <item
+        android:id="@+id/navSpeakersFragment"
+        android:title="Expositores">
+    </item>
+    <item
+        android:id="@+id/navMapFragment"
+        android:title="Mapa">
+    </item>
+</menu>
