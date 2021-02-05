@@ -1,4 +1,5 @@
 package com.books.app.network
+
 import com.books.app.model.Book
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
@@ -7,7 +8,7 @@ const val BOOKS_COLLECTION_NAME ="books"
 
 class FirestoreService {
     val firebaseFirestore = FirebaseFirestore.getInstance()
-    val settings =FirebaseFirestoreSettings.Builder().setPersistenceEnabled(true).build()
+    val settings = FirebaseFirestoreSettings.Builder().setPersistenceEnabled(true).build()
     init {
         firebaseFirestore.firestoreSettings = settings
     }

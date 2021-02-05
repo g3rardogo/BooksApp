@@ -10,11 +10,11 @@
         android:label="fragment_books"
         tools:layout="@layout/activity_main" >
         <action
-            android:id="@+id/action_navHomeFragment_to_booksDetailDialogFragment"
-            app:destination="@id/booksDetailDialogFragment" />
+            android:id="@+id/action_navHomeFragment_to_booksDetailFragmentDialog"
+            app:destination="@id/booksDetailFragmentDialog" />
     </fragment>
-    <fragment
-        android:id="@+id/booksDetailDialogFragment"
+    <dialog
+        android:id="@+id/booksDetailFragmentDialog"
         android:name="com.books.app.view.ui.fragments.BooksDetailDialogFragment"
         android:label="fragment_books_detail_dialog"
         tools:layout="@layout/fragment_books_detail_dialog" />

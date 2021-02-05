@@ -17,9 +17,10 @@ class BookAdapter(val bookListener: BookListener): RecyclerView.Adapter<BookAdap
 
     override fun onBindViewHolder(holder: BookAdapter.ViewHolder, position: Int) {
         val book = lisBook[position] as Book
+
         holder.tvBookName.text = book.title
         holder.tvBookAutor.text = book.author
-        holder.tvBookPrice.text = book.price
+        holder.tvBookPrice.text = "$ " + book.price
         holder.tvBookCategory.text = book.category
         Glide.with(holder.itemView.context)
                 .load(book.image)
@@ -28,7 +29,6 @@ class BookAdapter(val bookListener: BookListener): RecyclerView.Adapter<BookAdap
         holder.itemView.setOnClickListener{
             bookListener.onBookClicked(book, position)
         }
-
     }
 
     fun updateData(data: List<Book>){

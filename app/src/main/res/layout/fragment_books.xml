@@ -5,72 +5,77 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.BooksFragment">
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/rlBaseBooks"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <androidx.cardview.widget.CardView
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="4dp"
-            android:layout_margin="15dp"
-            app:cardBackgroundColor="@color/colorAccent">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/banner_home"
-                android:scaleType="centerCrop"/>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp">
-            <com.google.android.material.tabs.TabLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:tabMode="scrollable"
-                android:background="@color/colorPrimary"
-                app:tabSelectedTextColor="@color/white"
-                app:tabTextColor="@color/colorSubtitle"
-                app:tabIndicatorColor="@color/white">
-
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                android:layout_margin="15dp"
+                app:cardBackgroundColor="@color/colorAccent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/banner_home"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tab_1"
-                    />
+                    app:tabMode="scrollable"
+                    android:background="@color/colorPrimary"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextColor="@color/colorSubtitle"
+                    app:tabIndicatorColor="@color/white">
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tab_2"
-                    />
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_1"
+                        />
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tab_3"
-                    />
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_2"
+                        />
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tab_4"
-                    />
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_3"
+                        />
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tab_5"
-                    />
-            </com.google.android.material.tabs.TabLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvBooks"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_4"
+                        />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tab_5"
+                        />
+                </com.google.android.material.tabs.TabLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBooks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </RelativeLayout>
 
 </FrameLayout>

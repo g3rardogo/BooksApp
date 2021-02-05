@@ -65,15 +65,14 @@ class BooksFragment : Fragment(), BookListener {
     }
 
     fun observeViewModel(){
-        viewModel.listBook.observe(viewLifecycleOwner, Observer<List<Book>> { books ->
-            bookAdapter.updateData(books)
+        viewModel.listBook.observe(viewLifecycleOwner, Observer<List<Book>> { book ->
+            bookAdapter.updateData(book)
         })
     }
 
     override fun onBookClicked(book: Book, position: Int) {
         var bundle = bundleOf("book" to book)
-        findNavController().navigate(R.id.booksDetailDialogFragment, bundle)
-
+        findNavController().navigate(R.id.booksDetailFragmentDialog, bundle)
     }
 
     companion object {
