@@ -71,7 +71,8 @@ class BooksFragment : Fragment(), BookListener {
     }
 
     override fun onBookClicked(book: Book, position: Int) {
-        val bundle = bundleOf("book" to book)
+        var bundle = bundleOf("book" to book)
+        findNavController().navigate(R.id.booksDetailDialogFragment, bundle)
 
     }
 

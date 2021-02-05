@@ -8,5 +8,14 @@
         android:id="@+id/navHomeFragment"
         android:name="com.books.app.view.ui.fragments.BooksFragment"
         android:label="fragment_books"
-        tools:layout="@layout/activity_main" />
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_navHomeFragment_to_booksDetailDialogFragment"
+            app:destination="@id/booksDetailDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/booksDetailDialogFragment"
+        android:name="com.books.app.view.ui.fragments.BooksDetailDialogFragment"
+        android:label="fragment_books_detail_dialog"
+        tools:layout="@layout/fragment_books_detail_dialog" />
 </navigation>

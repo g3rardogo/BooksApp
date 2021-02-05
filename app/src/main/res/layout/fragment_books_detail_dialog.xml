@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -75,7 +75,7 @@
                             android:textColor="@color/colorPrimary"
                             android:textSize="@dimen/sizeSubtitle"/>
                         <TextView
-                            android:id="@+id/yvDetailBookDescription"
+                            android:id="@+id/tvDetailBookDescription"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/lorem"
@@ -83,6 +83,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btnBuy"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/heightBuyCardView"
                     android:layout_margin="@dimen/marginCardView"

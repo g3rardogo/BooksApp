@@ -1,6 +1,8 @@
 package com.books.app.model
 
-class Book {
+import java.io.Serializable
+
+class Book: Serializable {
     var title = ""
     var author = ""
     var description = ""
