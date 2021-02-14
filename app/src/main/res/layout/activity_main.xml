@@ -29,7 +29,13 @@
             android:id="@+id/llMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:orientation="vertical">
+            <fragment
+                android:id="@+id/fragMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.books.app.view.ui.fragments.CategoriesMenuFragment"/>
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/llMain"

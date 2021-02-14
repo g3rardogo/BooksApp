@@ -11,13 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var menuFragment = CategoriesMenuFragment()
-        var mainFragment = BooksFragment()
-
-        supportFragmentManager.beginTransaction()
-                .replace(R.id.llMenu, menuFragment, menuFragment.tag)
-                .commit()
-
         supportActionBar?.hide()
     }
 }
