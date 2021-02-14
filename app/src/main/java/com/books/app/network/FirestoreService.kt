@@ -1,6 +1,7 @@
 package com.books.app.network
 
 import com.books.app.model.Book
+import com.books.app.model.Category
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
 
@@ -25,4 +26,5 @@ class FirestoreService {
                 }
             }
     }
+
 }

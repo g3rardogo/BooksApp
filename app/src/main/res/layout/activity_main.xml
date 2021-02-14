@@ -10,6 +10,20 @@
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:background="@color/colorPrimary"
         android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/colorAccent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/banner_home"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
         
         <fragment
             android:id="@+id/fragContent"
