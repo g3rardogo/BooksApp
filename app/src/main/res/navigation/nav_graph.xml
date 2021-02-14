@@ -18,4 +18,5 @@
         android:name="com.books.app.view.ui.fragments.BooksDetailDialogFragment"
         android:label="fragment_books_detail_dialog"
         tools:layout="@layout/fragment_books_detail_dialog" />
+
 </navigation>
