@@ -4,52 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="4dp"
-            android:layout_margin="15dp"
-            app:cardBackgroundColor="@color/colorAccent">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/banner_home"
-                android:scaleType="centerCrop"/>
-        </androidx.cardview.widget.CardView>
-
+        android:background="@color/colorPrimary">
         <LinearLayout
-            android:id="@+id/llMenu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-            <fragment
-                android:id="@+id/fragMenu"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:name="com.books.app.view.ui.fragments.CategoriesMenuFragment"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/llMain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <fragment
-                android:id="@+id/fragContent"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                android:layout_margin="15dp"
+                app:cardBackgroundColor="@color/black">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/banner_home"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:name="androidx.navigation.fragment.NavHostFragment"
-                app:defaultNavHost="true"
-                app:navGraph="@navigation/nav_graph"/>
-        </LinearLayout>
+                android:background="@color/colorPrimary"
+                app:tabTextColor="@color/white"
+                app:tabIndicatorColor="@color/white"
+                />
 
-    </LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="504dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
