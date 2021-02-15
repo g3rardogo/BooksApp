@@ -39,7 +39,16 @@
                 android:id="@+id/view_pager"
                 android:layout_width="match_parent"
                 android:layout_height="504dp"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <fragment
+                    android:id="@+id/fragContent"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    app:defaultNavHost="true"
+                    app:navGraph="@navigation/nav_graph" />
+            </androidx.viewpager.widget.ViewPager>
 
         </LinearLayout>
     </ScrollView>
